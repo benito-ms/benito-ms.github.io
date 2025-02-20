@@ -49,7 +49,7 @@ header {
 
 .ribbon li ul.dropdown li a {
     height: fit-content;
-    padding: 0.5rem;    
+    padding: 0.5rem;
 }
 
 .ribbon li ul.dropdown {
@@ -899,7 +899,7 @@ footer {
 
 .container-event-grouper {
     display: flex;
-    flex-flow: column;
+    flex-flow: column wrap;
     margin-top: 4rem;
     border: 3px solid whitesmoke;
     width: 80%;
@@ -935,81 +935,6 @@ footer {
             border-radius: 3rem;
         }
 
-        .event-date-card {
-            width: 90%;
-            justify-self: center;
-            display: flex;
-            flex-flow: column;
-            background: white;
-            margin: 2rem 0;
-            border-radius: 1rem;
-            padding: 1rem 0rem;
-
-            .event-date-info {
-                display: flex;
-                flex-flow: column;
-                justify-content: center;
-                align-items: center;
-                padding: 0 1rem;
-            }
-
-            img {
-                justify-self: center;
-                align-self: center;
-                width: 26.5625rem;
-                height: 10rem;
-                padding-bottom: 1rem;
-                border-radius: 1rem 1rem 0 0;
-                margin-top: 1rem;
-            }
-        }
-
-        .date-card {
-            margin-top: .5rem;
-            align-self: center;
-            position: relative;
-            width: 8.5rem;
-            border: 1px solid #c2c1c1;
-            border-radius: 0.5rem;
-            margin-right: 1rem;
-            line-height: 1rem;
-            top: 0;
-
-            .month {
-                position: relative;
-                padding: 0.5rem 1rem;
-                border-radius: 0.5rem 0.5rem 0 0;
-                font-weight: 700;
-                text-align: center;
-                text-transform: uppercase;
-                color: white;
-                background-color: #054daa;
-            }
-
-            .day {
-                display: block;
-                margin: 0.25rem;
-                font-weight: 600;
-                text-align: center;
-                float: left;
-                padding-left: 0.5rem;
-                padding-right: 0.6rem;
-                color: #054daa;
-                border-right: 1px solid black;
-                background: white;
-            }
-
-            .year {
-                display: block;
-                margin: 0.25rem;
-                font-weight: 600;
-                text-align: center;
-                float: right;
-                padding-right: 0.5rem;
-                color: black;
-                background: white;
-            }
-        }
     }
 
     .container-event-3 {
@@ -1019,12 +944,104 @@ footer {
     }
 }
 
+.dark-date-card {
+    border: 1px solid rgb(175, 175, 175);
+}
+
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+.event-date-card {
+    width: 90%;
+    justify-self: center;
+    display: flex;
+    flex-flow: column;
+    background: white;
+    margin: 2rem 0;
+    border-radius: 1rem;
+    padding: 1rem 0rem;
+
+    .event-date-info {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 1rem;
+    }
+
+    img {
+        justify-self: center;
+        align-self: center;
+        width: 26.5625rem;
+        height: 10rem;
+        padding-bottom: 1rem;
+        border-radius: 1rem 1rem 0 0;
+        margin-top: 1rem;
+    }
+}
+
+.date-card {
+    display: block;
+    position: relative;
+    align-self: center;
+    margin-top: .5rem;
+    width: fit-content;
+    height: 4rem;
+    border: 1px solid #c2c1c1;
+    border-radius: 0.5rem;
+    line-height: 1rem;
+    top: 0;
+    background: white;
+}
+
+
+
+.date-card .month {
+    display: block;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    background-color: #054daa;
+}
+
+.date-card .day {
+    display: block;
+    margin-top: 0.25rem;
+    font-weight: 600;
+    text-align: center;
+    float: left;
+    padding: 0.25rem;
+    color: #054daa;
+    width: max-content;
+}
+
+.date-card .year {
+    display: block;
+    margin: 0.5rem 0.25rem;
+    padding-left: 0.25rem;
+    font-weight: 600;
+    text-align: center;
+    float: right;
+    padding-right: 0.5rem;
+    color: black;
+    background: white;
+    border-left: 1px solid black;
+}
+
 .date-card-event {
     margin-top: .5rem;
     align-self: center;
     position: relative;
-    width: 8.5rem;
-    border: 1px solid white;
+    width: fit-content;
+    height: 3.5rem;
+    border: 1px solid #c2c1c1;
     border-radius: 0.5rem;
     margin-right: 1rem;
     line-height: 1rem;
@@ -1050,6 +1067,7 @@ footer {
         padding-left: 0.5rem;
         padding-right: 0.6rem;
         color: #054daa;
+        border-radius: 0 0 0 0.5rem;
         border-right: 1px solid black;
     }
 
@@ -1292,5 +1310,5 @@ footer {
 
 .join-card ol {
     margin-left: 1.2rem;
-    
+
 }
