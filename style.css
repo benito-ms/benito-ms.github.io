@@ -452,7 +452,10 @@ header {
             padding: 1rem;
             border-radius: 2rem;
             margin-bottom: 2rem;
-
+            .event-click{
+                text-decoration: none;
+                color: black;
+            }
             img {
                 margin-bottom: 2rem;
                 width: 100%;
