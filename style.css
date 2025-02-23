@@ -271,6 +271,11 @@ header {
     height: 27rem;
 }
 
+.card-content a{
+    text-decoration: none;
+    color: black;
+}
+
 .card-content img {
     /* width: fit-content;
     height: 150px; */
