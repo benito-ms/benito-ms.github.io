@@ -68,6 +68,7 @@ header {
 
 .ribbon li:hover ul.dropdown {
     display: block;
+    min-width: max-content;
 }
 
 .head {
@@ -1319,4 +1320,9 @@ footer {
 .join-card ol {
     margin-left: 1.2rem;
 
+}
+
+.right-text ul,
+.left-text ul {
+    margin-left: 1rem;
 }
